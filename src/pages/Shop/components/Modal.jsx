@@ -64,6 +64,10 @@ const Modal = ({ showModal, closeModal, modalType = "Modaltype", userdata }) => 
     })
   }
 
+  const handleCloseModal = () => {
+    closeModal();
+  };
+
   const createToken = (data) => {
     axios.post(`${base_url}/api/admin/shop`, data, {
       headers: {
@@ -112,6 +116,10 @@ const Modal = ({ showModal, closeModal, modalType = "Modaltype", userdata }) => 
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
         <h2 className={styles.heading}>{modalType === "create" ? "Create a new Token" : "Update Token"}</h2>
+
+        <button className={styles.closeButton} onClick={handleCloseModal}>
+          &times;
+        </button>
 
         <form onSubmit={handleSubmit} className={styles.form}>
           <div>

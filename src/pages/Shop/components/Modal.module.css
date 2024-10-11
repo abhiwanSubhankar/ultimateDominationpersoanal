@@ -22,6 +22,17 @@
   margin-bottom: 0px;
 }
 
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .modalContent {
   background-color: #A9CCF2;
   padding: 20px;
@@ -29,6 +40,7 @@
   width: 80%;
   max-width: 500px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 h2 {
