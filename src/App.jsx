@@ -14,6 +14,7 @@ import AdminHouseCut from "./pages/WalletChange/AdminHouseCut.jsx";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute.jsx";
 import LeaderBoard from "./pages/LeaderBoard/LeaderBoard.jsx";
 import Shop from "./pages/Shop/Shop.jsx";
+import "./App.css";
 
 function App() {
   return (
